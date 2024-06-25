@@ -25,11 +25,20 @@ Ensure you have Go installed on your machine.
 
 Run the application:
 Execute the main Go file:
-go run main.go
+go run cmd/main.go
 
 Testing:
 Navigate to the transactions folder:
-cd transactions
+cd pkg/transactions/
+
+gateway-graph/
+├── go.mod
+├── go.sum
+├── main.go
+└── pkg/
+    └── transactions/
+        ├── transactions.go
+        └── transactions_test.go
 
 Run tests to verify functionality:
 go test -v
